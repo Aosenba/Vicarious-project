@@ -75,7 +75,7 @@ window.addEventListener("scroll", changeBack);
 
 
   return (
- <BrowserRouter >
+ <BrowserRouter basename={process.env.PUBLIC_URL}>
  <ScrollTop/>
     <div className="grid-container">
     <header className={navbar? "onScroll":""}>
